@@ -14,29 +14,7 @@ Thank you for respecting the hard work and creativity of developing this project
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 
 
-#page-wraper {
-    background: url(../images/logo.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-width: 100%;
 
-/* Add a black overlay */
-position: relative;
-
-&:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-   background-color: rgba(0, 0, 0, 0.4);
-}
-
-
-}
 
 
 /* Basic */
