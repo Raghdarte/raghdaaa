@@ -1,5 +1,4 @@
 #page-wraper {
-    background: url(../image/logo.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -16,7 +15,7 @@ position: relative;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.827);
 }
 
 
