@@ -39,13 +39,13 @@ a:hover {
 p {
     font-size: 16px;
     line-height: 24px;
-    color: #fff;
+    color: black;
 }
 
 h4 {
     font-size: 26px;
     font-weight: 700;
-    color: #fff;
+    color: rgb(255, 255, 255);
     letter-spacing: 0.25px;
 }
 
@@ -252,15 +252,12 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    color: black;
-    background-color: #fff;
-    width: 60px;
-    height: 60px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 20px;
     text-align: center;
     display: inline-block;
-    line-height: 60px;
-        border-radius: 5px;
-
+    border-radius: 5px;
 }
 
 .menu-close {
@@ -302,7 +299,7 @@ html {
 .section-heading h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #fff;
+    color: #000000;
 }
 
 .section-heading .line-dec {
@@ -314,7 +311,7 @@ html {
 
 .section-heading .jano {
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     letter-spacing: 1px;
     line-height: 2;
     text-align: justify;
@@ -332,7 +329,7 @@ html {
 .section-heading1 h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #fff;
+    color: #000000;
 }
 
 .section-heading1 .line-dec {
@@ -533,7 +530,7 @@ section.my-work .section-heading {
 }
 
 .isotope-toolbar input[type="radio"]:checked + span {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-bottom: 2px solid black;
 }
 
@@ -802,9 +799,6 @@ figure.snip1321.hover:after {
     }
 }
 
-
-
-
 /*--------------------------------------------------------------
 # Services Section (Revised)
 --------------------------------------------------------------*/
@@ -842,8 +836,12 @@ figure.snip1321.hover:after {
 }
 
 .section.contact-me .title a {
-    color: rgb(250, 249, 249);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
+
+
+
 
 
