@@ -57,6 +57,8 @@ Thank you for respecting the hard work and creativity of developing this project
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -286,60 +288,49 @@ Thank you for respecting the hard work and creativity of developing this project
     </section>
 
 
-    <section class="section my-work" data-section="section3">
-      <div class="container">
-        <div class="section-heading1">
-          <h2>My Work</h2>
-          <div class="line-dec"></div>
-        </div>
-        <div class="row" style="color: black;">
-          <div class="isotope-wrapper">
-            <form class="isotope-toolbar">
-              <label><input type="radio" data-type="*" checked="" name="isotope-filter" />
-                <span>All</span></label> 
-            </form>
-            <!--Pictures-->
-            <div class="isotope-box">
-              <!--Picture 1-->
-              <div class="isotope-item" data-type="nature">
-                <figure class="snip1321">
-                  <img src="assets/images/nancy1.JPG" alt="Raghda" />
-                  <figcaption>
-                    <a href="assets/images/nancy1.JPG" data-lightbox="image-1" data-title="فحم 
-                    <br> 30cm × 40cm"><i
-                        class="fa fa-search"></i></a>
-                  </figcaption>
-                </figure>
-              </div>
-              <!--Picture 2-->
-               <div class="isotope-item" data-type="nature">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio/neymarr.jpg" alt="Raghda" />
-                  <figcaption>
-                    <a href="assets/images/portfolio/neymarr.jpg" data-lightbox="image-1" data-title="فحم + رصاص
-                    <br> 30cm × 40cm"><i
-                        class="fa fa-search"></i></a>
-                  </figcaption>
-                </figure>
-              </div>
-               <!--Picture 3-->
-               <div class="isotope-item" data-type="nature">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio/photo.jpg" alt="Raghda" />
-                  <figcaption>
-                    <a href="assets/images/portfolio/photo.jpg" data-lightbox="image-1" data-title="فحم 
-                    <br> 30cm × 40cm"><i
-                        class="fa fa-search"></i></a>
-                  </figcaption>
-                </figure>
-              </div>
-
-             
-            </div>
+<!-- Portfolio Section -->
+<section class="section my-work" data-section="section3" >
+  <div class="row mt-4 py-3">
+    <div class="section-heading1">
+      <h2>My Work</h2>
+      <div class="line-dec"></div>
+    </div>
+    <div class="row mt-5 mx-0 justify-content-center align-items-center">
+      <div class="col-lg-3 col-md-4 col-12 card-wrapper">
+        <div class="card mt-4">
+          <img src="assets/images/nancy1.JPG" class="img-fluid" alt="portfolio-img">
+          <div class="card-body text-center">
+            <h6 class="card-title" style="color: black;">فحم </h6>
+            <p class="card-text text-secondary">30cm × 40cm</p>
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-lg-3 col-md-4 card-wrapper">
+        <div class="card mt-4">
+          <img src="assets/images/portfolio/neymarr.JPG" class="img-fluid" alt="portfolio-img">
+          <div class="card-body text-center">
+            <h6 class="card-title" style="color: black;">فحم + رصاص </h6>
+            <p class="card-text text-secondary">30cm × 40cm</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 card-wrapper">
+        <div class="card mt-4">
+          <img src="assets/images/portfolio/photo.JPG" class="img-fluid" alt="portfolio-img">
+          <div class="card-body text-center">
+            <h6 class="card-title" style="color: black;">فحم </h6>
+            <p class="card-text text-secondary">30cm × 40cm</p>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>      
+</section>
+
+
+
+
     <section class="section contact-me" data-section="section4">
       <div class="container" data-aos="fade-up"><br>
         <h2 style="text-align: center; color: black; font-weight: bold;">Contact</h2>
