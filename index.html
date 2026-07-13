@@ -2,7 +2,7 @@
 Copyright © 2024 raghda
 All rights reserved.
 
-This code is the intellectual property of Janan sabah, the creator of Raghdarte.
+This code is the intellectual property of Janan sabah, the creator of Raghdarte website.
 Unauthorized copying, modification, or distribution of this code or any of its components is strictly prohibited without prior written permission from the authors.
 
 For inquiries or permissions, please get in touch with Janan Sabah.
@@ -10,471 +10,1137 @@ For inquiries or permissions, please get in touch with Janan Sabah.
 Thank you for respecting the hard work and creativity of developing this project.
 -->
 
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>Raghda Artist</title>
-  <meta name="description" content="
-    ئەس رغدە مە وێنەکێشان ئەوبەهرەیا منە ئەوا برێکا وێ هینێن بەرێز من پێ دنیاسن، ئەس ژ حەژێکەرەکا باشم بو هونەرێ واقعی و ئەو تەفاصیلێت وێنە دایە ژیانا من …
-    باوەرناما من ب هونەری ڤیان و حەژێکرنا من یا زێدەیە بو هونەری، ئەس گەلەکا دلخوشم کو هەوە دگەل خو ببینم دگەشتا ڤی بواری دا .. 
-    جوداهیا کارێ من یا د کویراتیا تەفاصیلێت وێنێت من دا
-  ">
-  <meta name="keywords"
-    content="artist, visual artist, Potrait, black and white, painter, sculptor, digital art, contemporary art, modern art, abstract art, portrait artist, fine art, art gallery, creative works, art exhibitions, artwork, artistic portfolio, art commissions, custom art, art studio, freelance artist">
-  <meta name="robots" content="index,follow">
-  <meta property="twitter:card" content="summary">
-  <meta property="twitter:title" content="Raghda Artist">
-  <meta property="twitter:url" content="">
-  <meta property="twitter:description" content="
-    ئەس رغدە مە وێنەکێشان ئەوبەهرەیا منە ئەوا برێکا وێ هینێن بەرێز من پێ دنیاسن، ئەس ژ حەژێکەرەکا باشم بو هونەرێ واقعی و ئەو تەفاصیلێت وێنە دایە ژیانا من …
-    باوەرناما من ب هونەری ڤیان و حەژێکرنا من یا زێدەیە بو هونەری، ئەس گەلەکا دلخوشم کو هەوە دگەل خو ببینم دگەشتا ڤی بواری دا .. 
-    جوداهیا کارێ من یا د کویراتیا تەفاصیلێت وێنێت من دا
-  ">
-  <meta property="twitter:image" content="https://www.instagram.com/p/CoSgHGfI7xu/?utm_source=ig_web_copy_link">
-  <meta property="og:title" content="Raghda Artist">
-  <meta property="og:url" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="
-    ئەس رغدە مە وێنەکێشان ئەوبەهرەیا منە ئەوا برێکا وێ هینێن بەرێز من پێ دنیاسن، ئەس ژ حەژێکەرەکا باشم بو هونەرێ واقعی و ئەو تەفاصیلێت وێنە دایە ژیانا من …
-    باوەرناما من ب هونەری ڤیان و حەژێکرنا من یا زێدەیە بو هونەری، ئەس گەلەکا دلخوشم کو هەوە دگەل خو ببینم دگەشتا ڤی بواری دا .. 
-    جوداهیا کارێ من یا د کویراتیا تەفاصیلێت وێنێت من دا">
-  <meta property="og:image" content="assets/images/logo.jpg">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Content-Security-Policy">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta name="referrer" content="no-referrer">
-  <link rel="shurtcut icon" href="assets/images/logo.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raghda — Realism in Charcoal</title>
+    <meta
+      name="description"
+      content="Original realistic charcoal drawings and paintings by Raghda."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <style>
+      :root {
+        --paper: #fbf7f2;
+        --paper-deep: #f3ece3;
+        --ink: #2b2320;
+        --ink-soft: #5b4f49;
+        --rose: #c27b84;
+        --rose-deep: #a85f6b;
+        --sage: #8a9a7e;
+        --gold: #b99a6b;
+        --card: #fffefc;
+        --nav-bg: rgba(251, 247, 242, 0.86);
+        --slider-nav-bg: rgba(255, 254, 252, 0.85);
+        --shadow: 0 20px 45px -25px rgba(43, 35, 32, 0.35);
+        --shadow-soft: 0 10px 30px -18px rgba(43, 35, 32, 0.25);
+        --serif: "Fraunces", serif;
+        --sans: "Jost", sans-serif;
+        --dur: 0.7s;
+        --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+      /* ===================================================================
+     DARK MODE — same palette family, inverted for low-light viewing.
+     Toggled by setting data-theme="dark" on <html> (see JS at bottom).
+  =================================================================== */
+      html[data-theme="dark"] {
+        --paper: #211b18;
+        --paper-deep: #2a2320;
+        --ink: #f3ece6;
+        --ink-soft: #c9beb6;
+        --rose: #d592a0;
+        --rose-deep: #e08a9a;
+        --sage: #9fb093;
+        --gold: #c9ac7c;
+        --card: #2a2320;
+        --nav-bg: rgba(33, 27, 24, 0.86);
+        --slider-nav-bg: rgba(42, 35, 32, 0.85);
+        --shadow: 0 20px 45px -25px rgba(0, 0, 0, 0.55);
+        --shadow-soft: 0 10px 30px -18px rgba(0, 0, 0, 0.45);
+      }
 
-<link rel="stylesheet" href="css/style.css">
+      html,
+      body {
+        transition:
+          background 0.4s ease,
+          color 0.4s ease;
+      }
+      .card,
+      .social,
+      .btn,
+      header.nav,
+      .slider-track img,
+      .detail-overlay {
+        transition:
+          background 0.4s ease,
+          color 0.4s ease,
+          box-shadow 0.4s ease,
+          border-color 0.4s ease,
+          transform 0.5s var(--ease),
+          opacity 0.6s ease;
+      }
 
-
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Raghda",
-        "url": "https://www.raghda.com",
-        "image": "https://www.instagram.com/raghda_arte/p/CoSgHGfI7xu/",
-        "jobTitle": "Artist",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Potrait",
-          "url": "https://www.raghda.com/studio"
-        },
-        "sameAs": [
-          "https://www.instagram.com/raghda_arte/?igsh=bWxqeGZ4Zmdjdmsx",
-          "https://wa.me/9647507779450",
-          "https://www.tiktok.com/@raghda_arte?_t=8pQBTZIzUf7&_r=1",
-          "https://snapchat.com/t/ctq3pjV5",
-          "mailto:Raghuuda@gmail.com"
-        ],
-        "knowsAbout": ["Painting", "Sculpture", "Digital Art", "Potrait"],
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "Duhok"
-              },
-        "description": "A passionate artist specializing in painting, sculpture, and digital art, creating visually stunning and thought-provoking pieces.",
-        "award": [
-          "Best  Artist - Potrait",
-          "Black and white - silver"
-        ],
-        "hasOccupation": {
-          "@type": "Occupation",
-          "name": "Artist",
-          "description": "
-          ئەس رغدە مە وێنەکێشان ئەوبەهرەیا منە ئەوا برێکا وێ هینێن بەرێز من پێ دنیاسن، ئەس ژ حەژێکەرەکا باشم بو هونەرێ واقعی و ئەو تەفاصیلێت وێنە دایە ژیانا من …
-          باوەرناما من ب هونەری ڤیان و حەژێکرنا من یا زێدەیە بو هونەری، ئەس گەلەکا دلخوشم کو هەوە دگەل خو ببینم دگەشتا ڤی بواری دا .. 
-          جوداهیا کارێ من یا د کویراتیا تەفاصیلێت وێنێت من دا"
-        },
-        "workExample": [
-          {
-            "@type": "CreativeWork",
-            "url": "https://www.raghda.com",
-            "name": "Black and white",
-            "image": "https://www.instagram.com/p/CoSgHGfI7xu/?utm_source=ig_web_copy_link",
-            "description": "
-            ئەس رغدە مە وێنەکێشان ئەوبەهرەیا منە ئەوا برێکا وێ هینێن بەرێز من پێ دنیاسن، ئەس ژ حەژێکەرەکا باشم بو هونەرێ واقعی و ئەو تەفاصیلێت وێنە دایە ژیانا من …
-            باوەرناما من ب هونەری ڤیان و حەژێکرنا من یا زێدەیە بو هونەری، ئەس گەلەکا دلخوشم کو هەوە دگەل خو ببینم دگەشتا ڤی بواری دا .. 
-            جوداهیا کارێ من یا د کویراتیا تەفاصیلێت وێنێت من دا
-  "
-          },
-          {
-            "@type": "CreativeWork",
-            "url": "https://www.raghda.com",
-            "name": "Potrait",
-            "image": "https://www.instagram.com/p/CoSgHGfI7xu/?utm_source=ig_web_copy_link",
-            "description": "
-            ئەس رغدە مە وێنەکێشان ئەوبەهرەیا منە ئەوا برێکا وێ هینێن بەرێز من پێ دنیاسن، ئەس ژ حەژێکەرەکا باشم بو هونەرێ واقعی و ئەو تەفاصیلێت وێنە دایە ژیانا من …
-            باوەرناما من ب هونەری ڤیان و حەژێکرنا من یا زێدەیە بو هونەری، ئەس گەلەکا دلخوشم کو هەوە دگەل خو ببینم دگەشتا ڤی بواری دا .. 
-            جوداهیا کارێ من یا د کویراتیا تەفاصیلێت وێنێت من دا
-  "
-          }
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Support",
-          "email": "mailto:Raghuuda@gmail.com",
-          "url": "https://www.raghda.com/contact",
-          "telephone": "+964 750 777 9450",
-          "areaServed": "Worldwide",
-          "availableLanguage": ["English", "kurdish", "Arabic"]
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://www.raghda.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
         }
       }
-      </script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-423404453"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', '423404453');
-  </script>
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-
-
-  <title>Raghda Artist</title>
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="assets/css/fontawesome.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/owl.css" />
-  <link rel="stylesheet" href="assets/css/lightbox.css" />
-</head>
-
-<body>
-  <div id="page-wraper">
-    <!-- Sidebar Menu -->
-    <div class="responsive-nav">
-      <i class="fa fa-bars" id="menu-toggle"></i>
-      <div id="menu" class="menu">
-        <i class="fa fa-times" id="menu-close"></i>
-        <div class="container">
-          <div class="image">
-            <a href="#"><img src="assets/images/logo.jpg" alt="" /></a>
-          </div>
-          <div class="author-content">
-            <h4>Raghda</h4>
-            <span>Artist</span>
-          </div>
-          <nav class="main-nav" role="navigation">
-            <ul class="main-menu">
-              <li><a href="#section1">About Me</a></li>
-              <li><a href="#section3">My Work</a></li>
-              <li><a href="#section4">Contact Me</a></li>
-            </ul>
-          </nav>
-          <div class="social-network">
-            <ul class="soial-icons">
-              <li>
-                <a href="https://www.instagram.com/raghda_arte?igsh=bWxqeGZ4Zmdjdmsx"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://wa.me/9647507779450"><i class="fa fa-whatsapp"></i></a>
-              </li>
-              <li>
-                <a href="https://www.tiktok.com/@raghda_arte?_t=8pQBTZIzUf7&_r=1"><i class="fa fa-tiktok"></i></a>
-              </li>
-              <li>
-                <a href="https://snapchat.com/t/ctq3pjV5"><i class="fa fa-snapchat"></i></a>
-              </li>
-              <li>
-                <a href="mailto:Raghuuda@gmail.com"><i class="fa fa-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="copyright-text">
-            <p style="color: white;">Designed by <a style="color: orangered;" href="https://bit.ly/janan-sabah">Janan Sabah</a> <br><br><span style="color: rgba(255, 255, 255, 0.422);">© 2024 Copyright</span> <strong style="color: rgba(255, 255, 255, 0.422);" class="px-1 sitename">Raghda</strong> </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="section about-me" data-section="section1">
-      <div class="container"><br><br>
-        <div class="section-heading">
-          <h2>About Me</h2>
-          <div class="line-dec"></div>
-          <span class="jano" style="text-align: right;">
-
-           ئەس رغدە مە وێنەکێشان ئەو بەهرەیا منە ئەوا برێکا وێ هینێن بەرێز من دنیاسن، ئەس ژ حەژێکەرەکا باشم بو هونەرێ واقعی و ئەو تەفاصیلێت وێنە داینە ژیانا من,   باوەرناما من ب هونەری ڤیان و حەژێکرنا من یا زێدەیە بو هونەری، ئەس گەلەکا دلخوشم کو هەوە دگەل خو ببینم دگەشتا خودا..    جوداهیا کارێ من یا د کویراتیا تەفاصیلێت وێنێت من دا
-&#1748;
-          </span>
-
-        </div><br>
-        <div class="left-image-post">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="left-image" >
-                <img src="assets/images/raghda.jpg" alt="" />
-              </div><br>
-            </div>
-            <div class="col-md-6">
-              <div class="right-text">
-                <h4 style="direction: rtl;  line-height: 1.9; font-size: 16px; text-align: justify; text-wrap: pretty; color: rgba(0, 0, 0, 0.623);"> 
-ئامادەکرنا داخازیيان 
-پێتڤیە ئەڤان تێبینیان بزانی بەری داخاز بکەی :- 
-                  :
-                </h4><br>
-                <div class="row" style="direction: rtl; text-align: right; line-height: 1.9; font-size: 17px; color: black;">
-                  <div class="col-lg-6">
-                    <ul style="list-style-type: none; padding-right: 0;">
-                      <li><strong>• داخازی دکێمترین دەم دا دهێتە ئامادەکرن و فرێکرن بو دەستێ موشتەری برێکا Delivery&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>• وەرەقە رسم + ئیطار + تغلیف + بوکس &#1748;</strong></li>
-                      <br><br>
-                      <li><strong>1. وێنە دهێتە هەلبژارتن ژ لایێ “رەسام + موشتەری” و پێدڤیە وێنە یێ بکوالێتی بیت&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>2. لسەر وەرەقەکا نیڤ نەرم ب قەلەم و کەرەستێن مارکە بدەست دهێتە کێشان&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>3. دهێتە ئیمزا کرن&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>4. وەرەقا رسمی دهێتە ئیطارکرن “ئیطارێ بجام ژ داری هاتیە درستکرن”&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>5. لدیڤدا دهێتە پێچان ب نایلونیێ دژی شکەستنێ&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>6. پاش دهێتە خەملاندن ب کەرەستێن تغلیفێ&#1748;</strong></li>
-                      <br>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6">
-                    <ul style="list-style-type: none; padding-right: 0;">
-                      <br>
-                      <li><strong>7. لدوماهیێ بشێوەکێ باش دهێتە راگرتن و بو هەوەیێن بەرێز ب شێوەکێ باوەرپێکری و پاراستی دهێتە هنارتن بو دەستێ موشتەری برێکا مەندوبێن گەهاندنێ ’delivery’&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>•  پارەدان لدەمێ وەرگرتنێ یان برێکا FİB یان fastpay&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>•  وێنە و رسم د پاراستینە، رسم ناهێتە بەلاڤکرن بێی دەستیریا موشتەری&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>•  ماوێ گەهاندنێ ١٨ دەمژێر تا ٢ روژ&#1748;</strong></li>
-                      <br><br>
-                      <li><strong>•  داخازیا دووێ ژلایێ موشتەری ڤە دیاریەک دگەلدا هەيه </strong></li>
-                      <br><br>
-                      <li><strong>•  نامەکا بەروەخت بهنێرە بو داخازکرنێ&#1748;</strong></li>
-                    </ul>
-                  </div>
-                </div>
-                
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-<!-- Portfolio Section -->
-<section class="section my-work" data-section="section3" >
-  <div class="row mt-4 py-3">
-    <div class="section-heading1">
-      <h2>My Work</h2>
-      <div class="line-dec"></div>
-    </div>
-    <div class="row mt-5 mx-0 justify-content-center align-items-center">
-      <div class="col-lg-3 col-md-4 col-12 card-wrapper">
-        <div class="card mt-4">
-          <img src="assets/images/nancy1.JPG" class="img-fluid" alt="portfolio-img">
-          <div class="card-body text-center">
-            <h6 class="card-title" style="color: black;">فحم </h6>
-            <p class="card-text text-secondary">30cm × 40cm</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 card-wrapper">
-        <div class="card mt-4">
-          <img src="assets/images/portfolio/neymarr.jpg" class="img-fluid" alt="portfolio-img">
-          <div class="card-body text-center">
-            <h6 class="card-title" style="color: black;">فحم + رصاص </h6>
-            <p class="card-text text-secondary">30cm × 40cm</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 card-wrapper">
-        <div class="card mt-4">
-          <img src="assets/images/portfolio/photo.jpg" class="img-fluid" alt="portfolio-img">
-          <div class="card-body text-center">
-            <h6 class="card-title" style="color: black;">فحم </h6>
-            <p class="card-text text-secondary">30cm × 40cm</p>
-          </div>
-        </div>
-      </div>
-     
-    </div>
-  </div>      
-</section>
-
-
-
-
-    <section class="section contact-me" data-section="section4">
-      <div class="container" data-aos="fade-up"><br>
-        <h2 style="text-align: center; color: black; font-weight: bold;">Contact</h2>
-        <div class="line-dec"></div>
-      </div><br><br><br>
-    
-      <div class="container">
-        <div class="row gy-2">
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-geo-alt-fill custom-icon"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">Duhok</a></h4>
-            </div>
-          </div>
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0">
-              <a href="https://wa.me/9647507779450">
-                <i class="bi bi-whatsapp custom-icon"></i>
-              </a>
-            </div>
-            <div>
-              <h4 class="title"><a href="https://wa.me/9647507779450" class="stretched-link">Whatsapp</a></h4>
-            </div>
-          </div>
-          
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0">
-            <a href="https://www.instagram.com/raghda_arte?igsh=bWxqeGZ4Zmdjdmsx">
-            <i class="bi bi-instagram custom-icon"></i>
-            </a>
-            </div>
-            <div>
-              <h4 class="title"><a href="https://www.instagram.com/raghda_arte?igsh=bWxqeGZ4Zmdjdmsx"
-                  class="stretched-link">Instagram</a></h4>
-            </div>
-          </div>
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0">
-              <a href="mailto:Raghuuda@gmail.com">
-              <i class="bi bi-envelope custom-icon"></i>
-              </a>
-            </div>
-            <div>
-              <h4 class="title"><a href="mailto:Raghuuda@gmail.com" class="stretched-link">Email</a></h4>
-            </div>
-          </div>
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0">
-              <a href="https://www.tiktok.com/@raghda_arte?_t=8pQBTZIzUf7&_r=1">
-              <i class="bi bi-tiktok custom-icon"></i>
-              </a>
-            </div>
-            <div>
-              <h4 class="title"><a href="https://www.tiktok.com/@raghda_arte?_t=8pQBTZIzUf7&_r=1"
-                  class="stretched-link">Tiktok</a></h4>
-            </div>
-          </div>
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0">
-              <a href="https://snapchat.com/t/ctq3pjV5">
-              <i class="bi bi-snapchat custom-icon"></i>
-            </a>
-            </div>
-            <div>
-              <h4 class="title"><a href="https://snapchat.com/t/ctq3pjV5" class="stretched-link">Snapchat</a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-  </div>
-
-  <!-- Scripts -->
-  
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/lightbox.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script>
-    //according to loftblog tut
-    $(".main-menu li:first").addClass("active");
-
-    var showSection = function showSection(section, isAnimate) {
-      var direction = section.replace(/#/, ""),
-        reqSection = $(".section").filter(
-          '[data-section="' + direction + '"]'
-        ),
-        reqSectionPos = reqSection.offset().top - 0;
-
-      if (isAnimate) {
-        $("body, html").animate(
-          {
-            scrollTop: reqSectionPos
-          },
-          800
-        );
-      } else {
-        $("body, html").scrollTop(reqSectionPos);
+      * {
+        box-sizing: border-box;
       }
-    };
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+        font-weight: 300;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
 
-    var checkSection = function checkSection() {
-      $(".section").each(function () {
-        var $this = $(this),
-          topEdge = $this.offset().top - 80,
-          bottomEdge = topEdge + $this.height(),
-          wScroll = $(window).scrollTop();
-        if (topEdge < wScroll && bottomEdge > wScroll) {
-          var currentId = $this.data("section"),
-            reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-          reqLink
-            .closest("li")
-            .addClass("active")
-            .siblings()
-            .removeClass("active");
+      /* subtle paper grain overlay */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.5;
+        background-image:
+          radial-gradient(
+            circle at 20% 30%,
+            rgba(43, 35, 32, 0.02) 0,
+            transparent 45%
+          ),
+          radial-gradient(
+            circle at 80% 70%,
+            rgba(43, 35, 32, 0.025) 0,
+            transparent 50%
+          );
+        mix-blend-mode: multiply;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--serif);
+        font-weight: 500;
+        margin: 0;
+        color: var(--ink);
+      }
+      .eyebrow {
+        font-family: var(--sans);
+        font-size: 0.72rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--rose-deep);
+        font-weight: 500;
+      }
+
+      .container {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 28px;
+      }
+
+      /* ---------------- NAV ---------------- */
+      header.nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 40px;
+        transition:
+          background var(--dur) var(--ease),
+          box-shadow var(--dur) var(--ease),
+          padding var(--dur) var(--ease);
+        background: transparent;
+      }
+      header.nav.scrolled {
+        background: var(--nav-bg);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 24px -10px rgba(43, 35, 32, 0.18);
+        padding: 14px 40px;
+      }
+      .brand {
+        font-family: var(--serif);
+        font-style: italic;
+        font-weight: 500;
+        font-size: 1.3rem;
+        letter-spacing: 0.02em;
+      }
+      nav.links {
+        display: flex;
+        gap: 38px;
+      }
+      nav.links a {
+        font-size: 0.82rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 4px;
+        color: var(--ink-soft);
+        transition: color 0.3s ease;
+      }
+      nav.links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background: var(--rose-deep);
+        transition: width 0.35s var(--ease);
+      }
+      nav.links a:hover {
+        color: var(--ink);
+      }
+      nav.links a:hover::after {
+        width: 100%;
+      }
+      .nav-toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1100;
+      }
+      .nav-toggle span {
+        display: block;
+        width: 26px;
+        height: 1.5px;
+        background: var(--ink);
+        margin: 6px 0;
+        transition:
+          transform 0.3s ease,
+          opacity 0.3s ease;
+      }
+
+      .theme-toggle {
+        background: none;
+        border: 1px solid var(--ink-soft);
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--ink);
+        flex-shrink: 0;
+        opacity: 0.85;
+        transition:
+          opacity 0.3s ease,
+          border-color 0.3s ease,
+          transform 0.4s var(--ease);
+      }
+      .theme-toggle:hover {
+        opacity: 1;
+        transform: rotate(15deg);
+      }
+      .theme-toggle svg {
+        width: 18px;
+        height: 18px;
+      }
+      .theme-toggle .sun-icon {
+        display: none;
+      }
+      html[data-theme="dark"] .theme-toggle .moon-icon {
+        display: none;
+      }
+      html[data-theme="dark"] .theme-toggle .sun-icon {
+        display: block;
+      }
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      /* ---------------- HERO / ABOUT ---------------- */
+      .about {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 160px 24px 100px;
+        position: relative;
+        z-index: 1;
+      }
+      .portrait-wrap {
+        position: relative;
+        width: 260px;
+        height: 320px;
+        margin-bottom: 42px;
+        opacity: 0;
+        transform: translateY(24px);
+        animation: rise 1s var(--ease) 0.15s forwards;
+      }
+      /* soft ambient glow behind the frame */
+      .portrait-wrap::before {
+        content: "";
+        position: absolute;
+        inset: -30px;
+        background: radial-gradient(circle, var(--rose) 0%, transparent 68%);
+        opacity: 0.25;
+        filter: blur(18px);
+        z-index: 0;
+      }
+      .portrait-frame {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        padding: 12px;
+        background: var(--card);
+        box-shadow: var(--shadow);
+        transition:
+          transform 0.7s var(--ease),
+          box-shadow 0.5s ease;
+      }
+      .portrait-wrap:hover .portrait-frame {
+        transform: rotate(-1deg) scale(1.02);
+        box-shadow:
+          var(--shadow),
+          0 0 50px -18px var(--rose);
+      }
+      /* inner hairline, set slightly in from the mat */
+      .portrait-frame::after {
+        content: "";
+        position: absolute;
+        inset: 6px;
+        border: 1px solid var(--gold);
+        opacity: 0.6;
+        pointer-events: none;
+      }
+      .portrait {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.94);
+      }
+      /* gold corner brackets, fine-art frame detail */
+      .frame-corner {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 1.5px solid var(--gold);
+        z-index: 2;
+        pointer-events: none;
+      }
+      .frame-corner.tl {
+        top: -7px;
+        left: -7px;
+        border-right: none;
+        border-bottom: none;
+      }
+      .frame-corner.tr {
+        top: -7px;
+        right: -7px;
+        border-left: none;
+        border-bottom: none;
+      }
+      .frame-corner.bl {
+        bottom: -7px;
+        left: -7px;
+        border-right: none;
+        border-top: none;
+      }
+      .frame-corner.br {
+        bottom: -7px;
+        right: -7px;
+        border-left: none;
+        border-top: none;
+      }
+      .about h1 {
+        font-size: clamp(2.6rem, 5vw, 4.2rem);
+        font-style: italic;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: rise 1s var(--ease) 0.35s forwards;
+      }
+      .about .role {
+        margin-top: 10px;
+        margin-bottom: 26px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: rise 1s var(--ease) 0.5s forwards;
+      }
+      .about .bio {
+        max-width: 560px;
+        color: var(--ink-soft);
+        font-size: 1.02rem;
+        font-weight: 300;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: rise 1s var(--ease) 0.65s forwards;
+      }
+      @keyframes rise {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ---------------- SECTION HEADERS ---------------- */
+      .section {
+        padding: 110px 0;
+        position: relative;
+        z-index: 1;
+      }
+      .section-head {
+        text-align: center;
+        margin-bottom: 64px;
+      }
+      .section-head h2 {
+        font-size: clamp(2rem, 3.4vw, 2.8rem);
+        margin-top: 10px;
+      }
+      .section-head .rule {
+        width: 52px;
+        height: 1px;
+        background: var(--gold);
+        margin: 22px auto 0;
+        opacity: 0.7;
+      }
+
+      /* ---------------- REVEAL ON SCROLL ---------------- */
+      .reveal {
+        opacity: 0;
+        transform: translateY(34px);
+        transition:
+          opacity 0.9s var(--ease),
+          transform 0.9s var(--ease);
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ---------------- GALLERY GRID ---------------- */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 44px 36px;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: var(--shadow-soft);
+        transition:
+          transform 0.5s var(--ease),
+          box-shadow 0.5s var(--ease);
+      }
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow);
+      }
+      .card-img {
+        position: relative;
+        aspect-ratio: 4/5;
+        overflow: hidden;
+        cursor: pointer;
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 98% 100%, 0 100%);
+      }
+      .card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s var(--ease);
+      }
+      .card:hover .card-img img {
+        transform: scale(1.06);
+      }
+      .card-body {
+        padding: 22px 24px 26px;
+      }
+      .card-body .label {
+        font-size: 0.68rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--sage);
+        margin-bottom: 8px;
+        display: block;
+      }
+      .card-body h3 {
+        font-size: 1.28rem;
+        cursor: pointer;
+      }
+      .card-body .price {
+        margin-top: 6px;
+        color: var(--rose-deep);
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: 1.05rem;
+      }
+      .card-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 18px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 11px 18px;
+        border-radius: 2px;
+        border: 1px solid var(--ink);
+        cursor: pointer;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease,
+          border-color 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: none;
+      }
+      .btn-outline {
+        color: var(--ink);
+        border-color: var(--ink);
+      }
+      .btn-outline:hover {
+        background: var(--ink);
+        color: var(--paper);
+      }
+      .btn-fill {
+        background: var(--sage);
+        border-color: var(--sage);
+        color: #fff;
+      }
+      .btn-fill:hover {
+        background: #76866c;
+        border-color: #76866c;
+      }
+      .btn svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      /* ---------------- ARTWORK DETAIL OVERLAY ---------------- */
+      .detail-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 2000;
+        background: var(--paper);
+        overflow-y: auto;
+        transform: translateY(100%);
+        transition: transform 0.6s var(--ease);
+      }
+      .detail-overlay.open {
+        transform: translateY(0);
+      }
+      .detail-close {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: flex-end;
+        padding: 22px 34px 0;
+      }
+      .detail-close button {
+        background: var(--card);
+        border: 1px solid var(--paper-deep);
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow-soft);
+      }
+      .detail-wrap {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 20px 28px 100px;
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 60px;
+        align-items: start;
+      }
+      .slider {
+        position: relative;
+      }
+      .slider-track {
+        position: relative;
+        aspect-ratio: 4/5;
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow: var(--shadow);
+      }
+      .slider-track img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+      }
+      .slider-track img.active {
+        opacity: 1;
+      }
+      .slider-dots {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 16px;
+      }
+      .slider-dots button {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: none;
+        background: var(--paper-deep);
+        cursor: pointer;
+        transition:
+          background 0.3s ease,
+          transform 0.3s ease;
+      }
+      .slider-dots button.active {
+        background: var(--rose-deep);
+        transform: scale(1.2);
+      }
+      .slider-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--slider-nav-bg);
+        border: none;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow-soft);
+      }
+      .slider-nav.prev {
+        left: 10px;
+      }
+      .slider-nav.next {
+        right: 10px;
+      }
+
+      .detail-info .eyebrow {
+        margin-bottom: 14px;
+        display: block;
+      }
+      .detail-info h2 {
+        font-size: 2.2rem;
+        font-style: italic;
+        margin-bottom: 12px;
+      }
+      .detail-info .price {
+        font-family: var(--serif);
+        font-style: italic;
+        color: var(--rose-deep);
+        font-size: 1.3rem;
+        margin-bottom: 22px;
+      }
+      .detail-info .desc {
+        color: var(--ink-soft);
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+      .detail-info .meta {
+        font-size: 0.85rem;
+        color: var(--ink-soft);
+        margin-bottom: 30px;
+        border-top: 1px solid var(--paper-deep);
+        border-bottom: 1px solid var(--paper-deep);
+        padding: 16px 0;
+      }
+      .detail-info .meta div {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+      }
+
+      /* ---------------- CONTACT ---------------- */
+      .contact-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: var(--card);
+        padding: 16px 26px;
+        border-radius: 40px;
+        box-shadow: var(--shadow-soft);
+        transition:
+          transform 0.35s var(--ease),
+          box-shadow 0.35s var(--ease);
+        font-size: 0.9rem;
+        letter-spacing: 0.04em;
+      }
+      .social:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow);
+      }
+      .social svg {
+        width: 20px;
+        height: 20px;
+        color: var(--rose-deep);
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 20px 50px;
+        font-size: 0.78rem;
+        color: var(--ink-soft);
+        letter-spacing: 0.05em;
+      }
+      footer em {
+        font-family: var(--serif);
+      }
+
+      /* ---------------- RESPONSIVE ---------------- */
+      @media (max-width: 860px) {
+        .detail-wrap {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+      }
+      @media (max-width: 720px) {
+        nav.links {
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: min(78vw, 320px);
+          background: var(--paper);
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 40px;
+          gap: 28px;
+          transform: translateX(100%);
+          transition: transform 0.45s var(--ease);
+          box-shadow: -10px 0 40px -20px rgba(0, 0, 0, 0.25);
+        }
+        nav.links.open {
+          transform: translateX(0);
+        }
+        .nav-toggle {
+          display: block;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        header.nav {
+          padding: 18px 22px;
+        }
+        .about {
+          padding-top: 130px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav" id="mainNav">
+      <a href="#top" class="brand">Raghdarte</a>
+      <nav class="links" id="navLinks">
+        <a href="#about" onclick="closeMenu()">About Me</a>
+        <a href="#work" onclick="closeMenu()">My Work</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+        >
+          <svg
+            class="moon-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" />
+          </svg>
+          <svg
+            class="sun-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <circle cx="12" cy="12" r="4.2" />
+            <path
+              d="M12 2.5v2.3M12 19.2v2.3M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.3M19.2 12h2.3M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"
+            />
+          </svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <div class="portrait-wrap">
+          <div class="portrait-frame">
+            <img
+              class="portrait"
+              src="image/raghda.jpg"
+              alt="Portrait of Raghda, charcoal artist"
+            />
+            <div class="frame-corner tl"></div>
+            <div class="frame-corner tr"></div>
+            <div class="frame-corner bl"></div>
+            <div class="frame-corner br"></div>
+          </div>
+        </div>
+        <span class="eyebrow">Realism in Charcoal</span>
+        <h1>Raghda</h1>
+        <p class="role eyebrow" style="color: var(--sage)">
+          Charcoal Artist · Realism
+        </p>
+        <p class="bio">
+          My name is Raghda, and art is the gift through which you know me. I
+          have a deep passion for realistic drawing — the details I create have
+          shaped my artistic journey and given my life its unique beauty. My
+          true qualification in art is my sincere love for it. I'm truly happy
+          to have you with me on this journey. What sets my work apart is the
+          depth of detail in every drawing I create.
+        </p>
+      </section>
+
+      <!-- WORK -->
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Available Originals</span>
+            <h2>My Work</h2>
+            <div class="rule"></div>
+          </div>
+          <div class="grid" id="grid"></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Let's Connect</span>
+            <h2>Contact</h2>
+            <div class="rule"></div>
+          </div>
+          <div class="contact-grid reveal" id="socials"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span>2024 <em>Raghdarte</em> — All rights reserved. </span>
+      <br /><br />
+      Designed by
+      <a
+        href="https://janansabah.github.io/PORTFOLIO/"
+        target="_blank"
+        rel="noopener"
+        style="color: orangered; font-weight: 600; text-decoration: none"
+      >
+        Janan Sabah
+      </a>
+    </footer>
+
+    <!-- ARTWORK DETAIL OVERLAY -->
+    <div class="detail-overlay" id="detailOverlay">
+      <div class="detail-close">
+        <button onclick="closeDetail()" aria-label="Close">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <line x1="4" y1="4" x2="20" y2="20" />
+            <line x1="20" y1="4" x2="4" y2="20" />
+          </svg>
+        </button>
+      </div>
+      <div class="detail-wrap" id="detailContent"></div>
+    </div>
+
+    <script>
+      /* =====================================================================
+   CONFIG — edit these two things to personalize the site
+   1. WHATSAPP_NUMBER: full international number, digits only, no + or spaces
+   2. ARTWORKS: add a new object to this array to publish a new piece.
+      images needs exactly 3 URLs (or repeat one if you only have fewer).
+===================================================================== */
+      const WHATSAPP_NUMBER = "+9647507779450"; // TODO: replace with the artist's real WhatsApp number, e.g. "15551234567"
+
+      const ARTWORKS = [
+        {
+          id: "after-the-storm",
+          title: "After the Storm",
+          subtitle: "Original Charcoal Artwork",
+          price: "500$",
+          availability: "Available",
+          medium: "Charcoal on Paper",
+          size: "60 × 85 cm (23.6 × 33.5 inch)",
+          year: "2026",
+          thumb:
+            "image/p1.jpg",
+          images: [
+            "image/p1.jpg",
+            "image/p2.jpg",
+            "image/p3.jpg",
+          ],
+          description:
+            "After the Storm is an original charcoal artwork created entirely by hand using charcoal on paper. This one-of-a-kind portrait explores strength, silence, and resilience through realism and delicate tonal contrasts.",
+          shipping: "We ship to all European countries and the United States.",
+        },
+      ];
+
+      const SOCIALS = [
+        {
+          name: "Duhok",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>`,
+        },
+        {
+          name: "Instagram",
+          href: "https://www.instagram.com/raghda_arte?igsh=bWxqeGZ4Zmdjdmsx",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>`,
+        },
+        {
+          name: "TikTok",
+          href: "https://www.tiktok.com/@raghda_arte?_t=8pQBTZIzUf7&_r=1",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 4v10.2a3.3 3.3 0 1 1-2.5-3.2"/><path d="M14 4c.3 2 1.8 3.6 4 4"/></svg>`,
+        },
+        {
+          name: "Snapchat",
+          href: "https://snapchat.com/t/ePDGfaAk",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3.5c2.7 0 4.4 1.9 4.4 4.6 0 1.2-.1 2.1.2 2.9.3.1.7.1 1.1-.1.3-.1.7 0 .8.4.1.5-.2.9-.7 1.2-.4.2-1 .5-1.5.9.3.7 1.1 1.5 2.6 2-.2.6-1 .9-1.8 1-.1.4-.2.9-.4 1.2-.3.1-.7 0-1.3-.1-.6-.1-1.3-.3-2.1 0-.7.3-1.3 1-2.3 1s-1.6-.7-2.3-1c-.8-.3-1.5-.1-2.1 0-.6.1-1 .2-1.3.1-.2-.3-.3-.8-.4-1.2-.8-.1-1.6-.4-1.8-1 1.5-.5 2.3-1.3 2.6-2-.5-.4-1.1-.7-1.5-.9-.5-.3-.8-.7-.7-1.2.1-.4.5-.5.8-.4.4.2.8.2 1.1.1.3-.8.2-1.7.2-2.9 0-2.7 1.7-4.6 4.4-4.6Z"/></svg>`,
+        },
+        {
+          name: "WhatsApp",
+          href: `https://wa.me/${WHATSAPP_NUMBER}`,
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.8 19L4 20Z"/><path d="M9 9c0 3 2 6 6 6"/></svg>`,
+        },
+        {
+          name: "Email",
+          href: "mailto:Raghuuda@gmail.com",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/></svg>`,
+        },
+      ];
+
+      function waLink(title, price) {
+        const msg = encodeURIComponent(
+          `Hi! I'm interested in the artwork "${title}" priced at ${price}. Is it still available?`,
+        );
+        return `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
+      }
+
+      const grid = document.getElementById("grid");
+      ARTWORKS.forEach((art) => {
+        const card = document.createElement("div");
+        card.className = "card reveal";
+        card.innerHTML = `
+    <div class="card-img" onclick="openDetail('${art.id}')">
+      <img src="${art.thumb}" alt="${art.title}" loading="lazy">
+    </div>
+    <div class="card-body">
+      <span class="label">${art.subtitle || art.medium} · <span style="color:var(--rose-deep)">${art.availability}</span></span>
+      <h3 onclick="openDetail('${art.id}')">${art.title}</h3>
+      <p class="price">${art.price}</p>
+      <div class="card-actions">
+        <button class="btn btn-outline" onclick="openDetail('${art.id}')">More Information</button>
+        <a class="btn btn-fill" href="${waLink(art.title, art.price)}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.8 19L4 20Z"/></svg>
+          Order via WhatsApp
+        </a>
+      </div>
+    </div>`;
+        grid.appendChild(card);
+      });
+
+      const socialsWrap = document.getElementById("socials");
+      SOCIALS.forEach((s) => {
+        const el = document.createElement(s.href ? "a" : "div");
+        el.className = "social reveal";
+        if (s.href) {
+          el.href = s.href;
+          el.target = "_blank";
+          el.rel = "noopener";
+        }
+        el.innerHTML = `${s.icon}<span>${s.name}</span>`;
+        socialsWrap.appendChild(el);
+      });
+
+      /* ---------------- Detail overlay logic ---------------- */
+      let currentSlide = 0;
+      function openDetail(id) {
+        const art = ARTWORKS.find((a) => a.id === id);
+        if (!art) return;
+        currentSlide = 0;
+        const wrap = document.getElementById("detailContent");
+        wrap.innerHTML = `
+    <div class="slider">
+      <div class="slider-track" id="sliderTrack">
+        ${art.images.map((src, i) => `<img src="${src}" class="${i === 0 ? "active" : ""}" alt="${art.title} view ${i + 1}">`).join("")}
+        <button class="slider-nav prev" onclick="changeSlide(-1)" aria-label="Previous image">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <button class="slider-nav next" onclick="changeSlide(1)" aria-label="Next image">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+      <div class="slider-dots">
+        ${art.images.map((_, i) => `<button class="${i === 0 ? "active" : ""}" onclick="goSlide(${i})"></button>`).join("")}
+      </div>
+    </div>
+    <div class="detail-info">
+      <span class="eyebrow">${art.subtitle || art.medium}</span>
+      <h2>${art.title}</h2>
+      <p class="price">${art.price}</p>
+      <p class="desc">${art.description}</p>
+      <div class="meta">
+        <div><span>Availability</span><span>${art.availability}</span></div>
+        <div><span>Medium</span><span>${art.medium}</span></div>
+        <div><span>Size</span><span>${art.size}</span></div>
+        <div><span>Year</span><span>${art.year}</span></div>
+      </div>
+      ${art.shipping ? `<p class="desc" style="font-size:0.85rem; margin-top:-12px;"><em>${art.shipping}</em></p>` : ""}
+      <a class="btn btn-fill" href="${waLink(art.title, art.price)}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.8 19L4 20Z"/></svg>
+        Order via WhatsApp
+      </a>
+    </div>`;
+        document.getElementById("detailOverlay").classList.add("open");
+        document.body.style.overflow = "hidden";
+        history.pushState({ artwork: id }, "", `#work/${id}`);
+      }
+      function closeDetail() {
+        document.getElementById("detailOverlay").classList.remove("open");
+        document.body.style.overflow = "";
+        history.pushState({}, "", "#work");
+      }
+      function changeSlide(dir) {
+        const imgs = document.querySelectorAll("#sliderTrack img");
+        const dots = document.querySelectorAll(".slider-dots button");
+        imgs[currentSlide].classList.remove("active");
+        dots[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + dir + imgs.length) % imgs.length;
+        imgs[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");
+      }
+      function goSlide(i) {
+        const imgs = document.querySelectorAll("#sliderTrack img");
+        const dots = document.querySelectorAll(".slider-dots button");
+        imgs[currentSlide].classList.remove("active");
+        dots[currentSlide].classList.remove("active");
+        currentSlide = i;
+        imgs[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");
+      }
+
+      // open directly if URL already has a hash on load (deep link)
+      window.addEventListener("DOMContentLoaded", () => {
+        const hash = window.location.hash;
+        if (hash.startsWith("#work/")) {
+          const id = hash.replace("#work/", "");
+          openDetail(id);
+        }
+        document.getElementById("year").textContent = new Date().getFullYear();
+      });
+      window.addEventListener("popstate", () => {
+        if (!window.location.hash.startsWith("#work/")) {
+          document.getElementById("detailOverlay").classList.remove("open");
+          document.body.style.overflow = "";
         }
       });
-    };
 
-    $(".main-menu").on("click", "a", function (e) {
-      e.preventDefault();
-      showSection($(this).attr("href"), true);
-    });
+      /* ---------------- Dark / light mode ---------------- */
+      (function initTheme() {
+        const saved = localStorage.getItem("raghda-theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const theme = saved || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+      document.getElementById("themeToggle").addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("raghda-theme", next);
+      });
 
-    $(window).scroll(function () {
-      checkSection();
-    });
-  </script>
-</body>
+      /* ---------------- Sticky nav + mobile menu ---------------- */
+      const navEl = document.getElementById("mainNav");
+      window.addEventListener("scroll", () => {
+        navEl.classList.toggle("scrolled", window.scrollY > 40);
+      });
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () =>
+        navLinks.classList.toggle("open"),
+      );
+      function closeMenu() {
+        navLinks.classList.remove("open");
+      }
 
+      /* ---------------- Scroll reveal ---------------- */
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+    </script>
+  </body>
 </html>
