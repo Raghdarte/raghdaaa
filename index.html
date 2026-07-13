@@ -473,6 +473,7 @@ Thank you for respecting the hard work and creativity of developing this project
         overflow: hidden;
         cursor: pointer;
         clip-path: polygon(0 0, 100% 0, 100% 97%, 98% 100%, 0 100%);
+        background: var(--paper-deep);
       }
       .card-img img {
         width: 100%;
@@ -601,6 +602,7 @@ Thank you for respecting the hard work and creativity of developing this project
         overflow: hidden;
         border-radius: 4px;
         box-shadow: var(--shadow);
+        background: var(--paper-deep);
       }
       .slider-track img {
         position: absolute;
@@ -827,6 +829,7 @@ Thank you for respecting the hard work and creativity of developing this project
               class="portrait"
               src="image/raghda.jpg"
               alt="Portrait of Raghda, charcoal artist"
+              onerror="imgFallback(this, 'Raghda')"
             />
             <div class="frame-corner tl"></div>
             <div class="frame-corner tr"></div>
@@ -909,13 +912,33 @@ Thank you for respecting the hard work and creativity of developing this project
     </div>
 
     <script>
-      /* =====================================================================
-   CONFIG — edit these two things to personalize the site
-   1. WHATSAPP_NUMBER: full international number, digits only, no + or spaces
-   2. ARTWORKS: add a new object to this array to publish a new piece.
-      images needs exactly 3 URLs (or repeat one if you only have fewer).
-===================================================================== */
-      const WHATSAPP_NUMBER = "+9647507779450"; // TODO: replace with the artist's real WhatsApp number, e.g. "15551234567"
+      /* ---------------- Image fallback ----------------
+         If an image path 404s (e.g. wrong filename/case on GitHub Pages),
+         show a clean placeholder instead of a broken-image icon, and log
+         the exact path that failed so it's easy to check against the repo. */
+      function imgFallback(imgEl, label) {
+        console.warn(
+          "Image failed to load, showing placeholder instead:",
+          imgEl.getAttribute("src"),
+        );
+        imgEl.onerror = null;
+        imgEl.style.background =
+          "linear-gradient(135deg, #d8cabb 0%, #c9ac7c 100%)";
+        imgEl.style.objectFit = "contain";
+        imgEl.style.padding = "20%";
+        imgEl.alt = label ? `${label} (image not found)` : "Image not found";
+        imgEl.src =
+          "data:image/svg+xml;charset=UTF-8," +
+          encodeURIComponent(
+            `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+              <rect width="400" height="500" fill="#F3ECE3"/>
+              <text x="50%" y="48%" font-family="Georgia, serif" font-style="italic" font-size="26" fill="#5B4F49" text-anchor="middle">${label || "Image"}</text>
+              <text x="50%" y="56%" font-family="Arial" font-size="13" letter-spacing="1" fill="#A85F6B" text-anchor="middle">IMAGE NOT FOUND</text>
+            </svg>`,
+          );
+      }
+
+      const WHATSAPP_NUMBER = "9647507779450";
 
       const ARTWORKS = [
         {
@@ -927,13 +950,8 @@ Thank you for respecting the hard work and creativity of developing this project
           medium: "Charcoal on Paper",
           size: "60 × 85 cm (23.6 × 33.5 inch)",
           year: "2026",
-          thumb:
-            "image/p1.jpg",
-          images: [
-            "image/p1.jpg",
-            "image/p2.jpg",
-            "image/p3.jpg",
-          ],
+          thumb: "image/p1.jpg",
+          images: ["image/p1.jpg", "image/p2.jpg", "image/p3.jpg"],
           description:
             "After the Storm is an original charcoal artwork created entirely by hand using charcoal on paper. This one-of-a-kind portrait explores strength, silence, and resilience through realism and delicate tonal contrasts.",
           shipping: "We ship to all European countries and the United States.",
@@ -985,7 +1003,7 @@ Thank you for respecting the hard work and creativity of developing this project
         card.className = "card reveal";
         card.innerHTML = `
     <div class="card-img" onclick="openDetail('${art.id}')">
-      <img src="${art.thumb}" alt="${art.title}" loading="lazy">
+      <img src="${art.thumb}" alt="${art.title}" loading="lazy" onerror="imgFallback(this, '${art.title}')">
     </div>
     <div class="card-body">
       <span class="label">${art.subtitle || art.medium} · <span style="color:var(--rose-deep)">${art.availability}</span></span>
@@ -1025,7 +1043,7 @@ Thank you for respecting the hard work and creativity of developing this project
         wrap.innerHTML = `
     <div class="slider">
       <div class="slider-track" id="sliderTrack">
-        ${art.images.map((src, i) => `<img src="${src}" class="${i === 0 ? "active" : ""}" alt="${art.title} view ${i + 1}">`).join("")}
+        ${art.images.map((src, i) => `<img src="${src}" class="${i === 0 ? "active" : ""}" alt="${art.title} view ${i + 1}" onerror="imgFallback(this, '${art.title}')">`).join("")}
         <button class="slider-nav prev" onclick="changeSlide(-1)" aria-label="Previous image">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg>
         </button>
@@ -1089,7 +1107,6 @@ Thank you for respecting the hard work and creativity of developing this project
           const id = hash.replace("#work/", "");
           openDetail(id);
         }
-        document.getElementById("year").textContent = new Date().getFullYear();
       });
       window.addEventListener("popstate", () => {
         if (!window.location.hash.startsWith("#work/")) {
