@@ -385,10 +385,22 @@ Thank you for respecting the hard work and creativity of developing this project
       }
       .about h1 {
         font-size: clamp(2.6rem, 5vw, 4.2rem);
-        font-style: italic;
         opacity: 0;
         transform: translateY(20px);
         animation: rise 1s var(--ease) 0.35s forwards;
+      }
+      .artist-name {
+        font-family: "Fraunces", "Playfair Display", serif;
+        font-weight: 600;
+        font-size: clamp(2.6rem, 5vw, 4.2rem);
+        letter-spacing: 2px;
+        color: black;
+        transition:
+          color 0.4s ease,
+          text-shadow 0.4s ease;
+      }
+      html[data-theme="dark"] .artist-name {
+        color: white;
       }
       .about .role {
         margin-top: 10px;
@@ -483,6 +495,54 @@ Thank you for respecting the hard work and creativity of developing this project
       }
       .card:hover .card-img img {
         transform: scale(1.06);
+      }
+
+      /* ---------------- SALE BADGE ---------------- */
+      .sale-badge {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 3;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 15px 7px 12px;
+        background: linear-gradient(135deg, var(--rose-deep), var(--rose));
+        color: #fff;
+        font-family: var(--sans);
+        font-size: 0.64rem;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        border-radius: 30px;
+        box-shadow:
+          0 8px 18px -8px rgba(168, 95, 107, 0.6),
+          0 0 0 1px rgba(255, 255, 255, 0.25) inset;
+        backdrop-filter: blur(2px);
+        pointer-events: none;
+        animation: badgeIn 0.6s var(--ease) 0.2s both;
+      }
+      .sale-badge.sold {
+        background: linear-gradient(135deg, var(--ink-soft), #7a6d66);
+      }
+      .sale-badge::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
+      }
+      @keyframes badgeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-8px) scale(0.92);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
       }
       .card-body {
         padding: 22px 24px 26px;
@@ -775,12 +835,28 @@ Thank you for respecting the hard work and creativity of developing this project
         .about {
           padding-top: 130px;
         }
+
+        /* smaller, matted artwork image on mobile cards */
+        .card-img {
+          aspect-ratio: 4 / 4.4;
+          padding: 20px;
+          background: var(--paper-deep);
+        }
+        .card-img img {
+          border-radius: 6px;
+          object-fit: contain;
+          box-shadow: var(--shadow-soft);
+        }
+        .sale-badge {
+          top: 26px;
+          left: 26px;
+        }
       }
     </style>
   </head>
   <body>
     <header class="nav" id="mainNav">
-      <a href="#top" class="brand">Raghdarte</a>
+      <a href="#top" class="brand">Raghd arte</a>
       <nav class="links" id="navLinks">
         <a href="#about" onclick="closeMenu()">About Me</a>
         <a href="#work" onclick="closeMenu()">My Work</a>
@@ -837,11 +913,8 @@ Thank you for respecting the hard work and creativity of developing this project
             <div class="frame-corner br"></div>
           </div>
         </div>
-        <span class="eyebrow">Realism in Charcoal</span>
-        <h1>Raghda</h1>
-        <p class="role eyebrow" style="color: var(--sage)">
-          Charcoal Artist · Realism
-        </p>
+        <h1 class="artist-name">Raghda</h1><br>
+        <span class="eyebrow">Artist</span>
         <p class="bio">
           My name is Raghda, and art is the gift through which you know me. I
           have a deep passion for realistic drawing — the details I create have
@@ -912,10 +985,6 @@ Thank you for respecting the hard work and creativity of developing this project
     </div>
 
     <script>
-      /* ---------------- Image fallback ----------------
-         If an image path 404s (e.g. wrong filename/case on GitHub Pages),
-         show a clean placeholder instead of a broken-image icon, and log
-         the exact path that failed so it's easy to check against the repo. */
       function imgFallback(imgEl, label) {
         console.warn(
           "Image failed to load, showing placeholder instead:",
@@ -952,6 +1021,7 @@ Thank you for respecting the hard work and creativity of developing this project
           year: "2026",
           thumb: "image/p1.JPG",
           images: ["image/p1.JPG", "image/p2.JPG", "image/p3.JPG"],
+          sizee: "Size of the Drawing & Paper  60 × 85 cm (23.6 × 33.5 inch)",
           description:
             "After the Storm is an original charcoal artwork created entirely by hand using charcoal on paper. This one-of-a-kind portrait explores strength, silence, and resilience through realism and delicate tonal contrasts.",
           shipping: "We ship to all European countries and the United States.",
@@ -1001,8 +1071,10 @@ Thank you for respecting the hard work and creativity of developing this project
       ARTWORKS.forEach((art) => {
         const card = document.createElement("div");
         card.className = "card reveal";
+        const isSold = /sold/i.test(art.availability);
         card.innerHTML = `
     <div class="card-img" onclick="openDetail('${art.id}')">
+      <span class="sale-badge${isSold ? " sold" : ""}">${isSold ? "Sold" : "For Sale"}</span>
       <img src="${art.thumb}" alt="${art.title}" loading="lazy" onerror="imgFallback(this, '${art.title}')">
     </div>
     <div class="card-body">
@@ -1059,13 +1131,16 @@ Thank you for respecting the hard work and creativity of developing this project
       <span class="eyebrow">${art.subtitle || art.medium}</span>
       <h2>${art.title}</h2>
       <p class="price">${art.price}</p>
-      <p class="desc">${art.description}</p>
       <div class="meta">
         <div><span>Availability</span><span>${art.availability}</span></div>
         <div><span>Medium</span><span>${art.medium}</span></div>
         <div><span>Size</span><span>${art.size}</span></div>
         <div><span>Year</span><span>${art.year}</span></div>
       </div>
+              <div><span></span><span>${art.sizee}</span></div>
+
+            <p class="desc">${art.description}</p>
+
       ${art.shipping ? `<p class="desc" style="font-size:0.85rem; margin-top:-12px;"><em>${art.shipping}</em></p>` : ""}
       <a class="btn btn-fill" href="${waLink(art.title, art.price)}" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.8 19L4 20Z"/></svg>
