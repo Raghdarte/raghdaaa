@@ -22,7 +22,7 @@ Thank you for respecting the hard work and creativity of developing this project
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">    <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
@@ -383,26 +383,31 @@ Thank you for respecting the hard work and creativity of developing this project
         border-left: none;
         border-top: none;
       }
-      .about h1 {
-        font-size: clamp(2.6rem, 5vw, 4.2rem);
-        opacity: 0;
-        transform: translateY(20px);
-        animation: rise 1s var(--ease) 0.35s forwards;
-      }
+      .about h1{
+    font-family: "Forum", serif;
+    font-size: clamp(2.8rem, 5vw, 4.3rem);
+    font-weight: 700;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #1f1f1f;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: rise 1s var(--ease) .35s forwards;
+}
+
       .artist-name {
         font-family: "Fraunces", "Playfair Display", serif;
         font-weight: 600;
         font-size: clamp(2.6rem, 5vw, 4.2rem);
         letter-spacing: 2px;
-        color: var(--rose-deep);
-        text-shadow: 0 2px 18px rgba(168, 95, 107, 0.18);
+        color: black;
         transition:
           color 0.4s ease,
           text-shadow 0.4s ease;
       }
       html[data-theme="dark"] .artist-name {
-        color: var(--gold);
-        text-shadow: 0 2px 22px rgba(201, 172, 124, 0.28);
+        color: white;
       }
       .about .role {
         margin-top: 10px;
@@ -905,7 +910,7 @@ Thank you for respecting the hard work and creativity of developing this project
   </head>
   <body>
     <header class="nav" id="mainNav">
-      <a href="#top" class="brand">Raghd arte</a>
+      <a href="#top" class="brand">Raghda Arte</a>
       <nav class="links" id="navLinks">
         <a href="#about" onclick="closeMenu()">About Me</a>
         <a href="#work" onclick="closeMenu()">My Work</a>
